@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Quantum Shift - Home Page (index.html)
+        Author: Your Name
+        Description: Entry page for the Quantum Shift learning game.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Shift | Home</title>
+
+    <!-- Main site stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-oqYvCkXcNfV7b1lScXhaBgQYVvWQx7xuqLm9VK0xrH/5BU8mVwedNjzw0gcewCEXU26aNd0U+7pWsK3mk5i5CQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<header class="site-header">
+    <div class="branding">
+        <div class="logo-circle">
+            <span class="logo-q">Q</span>
+        </div>
+        <div class="logo-text">
+            <h1>Quantum Shift</h1>
+            <p class="tagline">Jump between levels while learning JavaScript &amp; CSS.</p>
+        </div>
+    </div>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="game.html">Play Game</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="lore.html">Lore</a></li>
+            <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Intro / hero section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Shift your skills into a higher orbit.</h2>
+            <p>
+                Quantum Shift is a small browser game that helps you practice the basics of
+                JavaScript, CSS, and HTML. Answer short questions, level up, and see how far
+                you can travel through the purple coding universe.
+            </p>
+            <a class="btn primary-btn" href="game.html">
+                <i class="fa-solid fa-play"></i> Start Playing
+            </a>
+            <a class="btn outline-btn" href="tutorial.html">
+                <i class="fa-solid fa-circle-question"></i> Learn How It Works
+            </a>
+        </div>
+
+        <div class="hero-visual">
+            <div class="orbital-card">
+                <h3>Quick Rounds</h3>
+                <p>Each round only takes a few minutes, so it fits between classes or study sessions.</p>
+            </div>
+            <div class="orbital-card">
+                <h3>Focused Questions</h3>
+                <p>Every prompt targets a single idea, like variables, selectors, or tags.</p>
+            </div>
+            <div class="orbital-card">
+                <h3>Purple-Only Universe</h3>
+                <p>A calm, purple-themed interface that stays consistent across every page.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What you'll practice -->
+    <section class="info-section">
+        <h2 class="section-title">What you’ll practice</h2>
+        <div class="card-grid">
+            <article class="info-card">
+                <h3><i class="fa-brands fa-js"></i> JavaScript Basics</h3>
+                <p>
+                    Get comfortable with things like variables, functions, and events—
+                    all at a beginner-friendly pace.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3><i class="fa-brands fa-css3-alt"></i> CSS Styling</h3>
+                <p>
+                    Review selectors, classes, and IDs while seeing a real purple theme in action.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3><i class="fa-brands fa-html5"></i> HTML Structure</h3>
+                <p>
+                    Remember how semantic tags (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, etc.)
+                    keep your pages organized and easier to maintain.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="info-section">
+        <h2 class="section-title">How Quantum Shift works</h2>
+        <div class="steps">
+            <div class="step">
+                <span class="step-number">1</span>
+                <p>Open the <strong>Play Game</strong> page and hit the start button.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <p>Answer each question before the timer runs out and read the explanation.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <p>Check your final summary and see your “Shift Level” at the end of the round.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-main">
+        <p>&copy; <span id="year-home"></span> Quantum Shift. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="https://github.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Validation links -->
+    <p class="validators">
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">
+            Validate HTML
+        </a>
+        <span>|</span>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">
+            Validate CSS
+        </a>
+    </p>
+</footer>
+
+<script>
+    (function () {
+        var yearSpan = document.getElementById("year-home");
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    })();
+</script>
+</body>
+</html>

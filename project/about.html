@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Quantum Shift - About Page (about.html)
+        Author: Your Name
+        Description: About the project and simple feedback form.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Shift | About &amp; Contact</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-oqYvCkXcNfV7b1lScXhaBgQYVvWQx7xuqLm9VK0xrH/5BU8mVwedNjzw0gcewCEXU26aNd0U+7pWsK3mk5i5CQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<header class="site-header">
+    <div class="branding">
+        <div class="logo-circle">
+            <span class="logo-q">Q</span>
+        </div>
+        <div class="logo-text">
+            <h1>Quantum Shift</h1>
+            <p class="tagline">A small project built to make web basics less intimidating.</p>
+        </div>
+    </div>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Play Game</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="lore.html">Lore</a></li>
+            <li><a href="about.html" class="active">About &amp; Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="info-section">
+        <h2 class="section-title">About the Project</h2>
+        <div class="about-layout">
+            <div class="about-text">
+                <p>
+                    Quantum Shift was built as a small learning project to combine HTML structure,
+                    CSS styling, and a bit of JavaScript logic into one purple-themed package.
+                </p>
+                <p>
+                    The main idea is to make the first steps into web development feel less
+                    overwhelming. Instead of reading long notes, you can play through a round
+                    and then look at the code behind it.
+                </p>
+            </div>
+            <div class="about-highlight">
+                <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Technologies Used</h3>
+                <ul>
+                    <li>HTML5 semantic layout</li>
+                    <li>CSS for layout and purple color scheme</li>
+                    <li>Vanilla JavaScript for quiz logic and timer</li>
+                    <li>Font Awesome icons</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section alt-bg">
+        <h2 class="section-title">Feedback &amp; Suggestions</h2>
+        <p>
+            Use this simple form to report bugs, suggest new questions, or share ideas.
+            For this class project, the form just demonstrates standard HTML fields.
+        </p>
+
+        <form class="feedback-form">
+            <div class="form-row">
+                <label for="name">Name (optional)</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email (optional)</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+            </div>
+
+            <div class="form-row">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                    <option value="bug">Bug or problem</option>
+                    <option value="idea">New question idea</option>
+                    <option value="design">Design suggestion</option>
+                    <option value="other">Other feedback</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"
+                          placeholder="Write your feedback here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn primary-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Feedback
+            </button>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-main">
+        <p>&copy; <span id="year-about"></span> Quantum Shift. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="https://github.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Validation links -->
+    <p class="validators">
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">
+            Validate HTML
+        </a>
+        <span>|</span>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">
+            Validate CSS
+        </a>
+    </p>
+</footer>
+
+<script>
+    (function () {
+        var yearSpan = document.getElementById("year-about");
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    })();
+</script>
+</body>
+</html>

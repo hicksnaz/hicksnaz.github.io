@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Quantum Shift - Tutorial Page (tutorial.html)
+        Author: Your Name
+        Description: Simple instructions on how to play the game and how the code fits together.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Shift | Tutorial</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-oqYvCkXcNfV7b1lScXhaBgQYVvWQx7xuqLm9VK0xrH/5BU8mVwedNjzw0gcewCEXU26aNd0U+7pWsK3mk5i5CQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<header class="site-header">
+    <div class="branding">
+        <div class="logo-circle">
+            <span class="logo-q">Q</span>
+        </div>
+        <div class="logo-text">
+            <h1>Quantum Shift</h1>
+            <p class="tagline">A quick guide to playing and learning.</p>
+        </div>
+    </div>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Play Game</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="tutorial.html" class="active">Tutorial</a></li>
+            <li><a href="lore.html">Lore</a></li>
+            <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="info-section">
+        <h2 class="section-title"><i class="fa-solid fa-gamepad"></i> How to Play</h2>
+        <ol class="tutorial-steps">
+            <li>Go to the <strong>Play Game</strong> page.</li>
+            <li>Click the <strong>Start Game</strong> button.</li>
+            <li>Read the question and then click the answer you think is correct.</li>
+            <li>Try to answer before the timer reaches zero.</li>
+            <li>Read the explanation for each question before moving on.</li>
+            <li>At the end, check the summary panel to see your score and level.</li>
+        </ol>
+    </section>
+
+    <section class="info-section alt-bg">
+        <h2 class="section-title"><i class="fa-solid fa-code-branch"></i> Where HTML, CSS, and JS are used</h2>
+        <div class="lesson-grid">
+            <article class="lesson-card">
+                <h3>HTML (Structure)</h3>
+                <p>
+                    The quiz page uses HTML to define the layout: the question text, answer
+                    buttons, and status area. For example, the empty <code>div</code> with
+                    id <code>answer-buttons</code> is where the JavaScript injects the answer choices.
+                </p>
+            </article>
+            <article class="lesson-card">
+                <h3>CSS (Purple Theme)</h3>
+                <p>
+                    The whole purple color scheme lives in <code>css/main.css</code>. It handles
+                    layouts, fonts, spacing, and the color of buttons and cards.
+                </p>
+            </article>
+            <article class="lesson-card">
+                <h3>JavaScript (Game Logic)</h3>
+                <p>
+                    The file <code>js/game.js</code> stores questions, starts the timer,
+                    and updates the score and level as you play.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h2 class="section-title"><i class="fa-solid fa-clock"></i> About the Timer</h2>
+        <p>
+            Each question gives you a limited number of seconds. When the time runs out,
+            the question is marked as incorrect and the explanation still appears so that
+            you can learn from it.
+        </p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-main">
+        <p>&copy; <span id="year-tutorial"></span> Quantum Shift. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="https://github.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Validation links -->
+    <p class="validators">
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">
+            Validate HTML
+        </a>
+        <span>|</span>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">
+            Validate CSS
+        </a>
+    </p>
+</footer>
+
+<script>
+    (function () {
+        var yearSpan = document.getElementById("year-tutorial");
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Quantum Shift - Lessons Page (lessons.html)
+        Author: Your Name
+        Description: Quick-reference notes for HTML, CSS, and JavaScript basics.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Shift | Lessons</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-oqYvCkXcNfV7b1lScXhaBgQYVvWQx7xuqLm9VK0xrH/5BU8mVwedNjzw0gcewCEXU26aNd0U+7pWsK3mk5i5CQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<header class="site-header">
+    <div class="branding">
+        <div class="logo-circle">
+            <span class="logo-q">Q</span>
+        </div>
+        <div class="logo-text">
+            <h1>Quantum Shift</h1>
+            <p class="tagline">Short notes to back up the quiz.</p>
+        </div>
+    </div>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Play Game</a></li>
+            <li><a href="lessons.html" class="active">Lessons</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="lore.html">Lore</a></li>
+            <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="info-section">
+        <h2 class="section-title"><i class="fa-solid fa-code"></i> HTML Basics</h2>
+        <div class="lesson-grid">
+            <article class="lesson-card">
+                <h3>Page Skeleton</h3>
+                <p>
+                    A basic HTML page usually starts with <code>&lt;!DOCTYPE html&gt;</code> and
+                    includes <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>.
+                    The visible content usually sits inside the body.
+                </p>
+            </article>
+            <article class="lesson-card">
+                <h3>Semantic Layout</h3>
+                <p>
+                    Tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                    <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> describe the
+                    purpose of each section. That helps both people and browsers.
+                </p>
+            </article>
+            <article class="lesson-card">
+                <h3>Attributes</h3>
+                <p>
+                    Attributes such as <code>id</code>, <code>class</code>, and <code>href</code>
+                    add extra details to elements. They often connect HTML to CSS or JavaScript.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="info-section alt-bg">
+        <h2 class="section-title"><i class="fa-brands fa-css3-alt"></i> CSS Basics</h2>
+        <div class="lesson-grid">
+            <article class="lesson-card">
+                <h3>Selectors</h3>
+                <p>
+                    A selector tells CSS which elements to style. For example,
+                    <code>p</code> targets all paragraphs,
+                    <code>.btn</code> targets elements with class "btn",
+                    and <code>#main</code> targets the element with id="main".
+                </p>
+            </article>
+            <article class="lesson-card">
+                <h3>Classes vs IDs</h3>
+                <p>
+                    Use a <code>class</code> for styles that might be reused.
+                    Use an <code>id</code> when you’re styling (or referencing) a unique element.
+                </p>
+            </article>
+            <article class="lesson-card">
+                <h3>Box Model</h3>
+                <p>
+                    Every element is basically a box: content, padding, border, and margin.
+                    Adjusting those values gives you control over spacing.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h2 class="section-title"><i class="fa-brands fa-js"></i> JavaScript Basics</h2>
+        <div class="lesson-grid">
+            <article class="lesson-card">
+                <h3>Variables</h3>
+                <p>
+                    Variables store values so you can reuse them. Modern JavaScript usually
+                    uses <code>let</code> and <code>const</code>.
+                </p>
+            </article>
+            <article class="lesson-card">
+                <h3>Functions</h3>
+                <p>
+                    Functions wrap reusable logic. A simple example:
+                    <code>function greet(name) { console.log("Hi " + name); }</code>
+                </p>
+            </article>
+            <article class="lesson-card">
+                <h3>Events</h3>
+                <p>
+                    JavaScript can react to user actions like clicks. For example:
+                    <code>button.addEventListener("click", doSomething);</code>
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h2 class="section-title">External Resources</h2>
+        <ul class="resource-list">
+            <li>
+                <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    MDN Web Docs (HTML, CSS, JS)
+                </a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    W3Schools Tutorials
+                </a>
+            </li>
+            <li>
+                <a href="https://javascript.info/" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    The Modern JavaScript Tutorial
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-main">
+        <p>&copy; <span id="year-lessons"></span> Quantum Shift. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="https://github.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Validation links -->
+    <p class="validators">
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">
+            Validate HTML
+        </a>
+        <span>|</span>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">
+            Validate CSS
+        </a>
+    </p>
+</footer>
+
+<script>
+    (function () {
+        var yearSpan = document.getElementById("year-lessons");
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    })();
+</script>
+</body>
+</html>

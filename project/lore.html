@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Quantum Shift - Lore Page (lore.html)
+        Author: Your Name
+        Description: A short story-style description of the Quantum Shift universe.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Shift | Lore</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-oqYvCkXcNfV7b1lScXhaBgQYVvWQx7xuqLm9VK0xrH/5BU8mVwedNjzw0gcewCEXU26aNd0U+7pWsK3mk5i5CQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<header class="site-header">
+    <div class="branding">
+        <div class="logo-circle">
+            <span class="logo-q">Q</span>
+        </div>
+        <div class="logo-text">
+            <h1>Quantum Shift</h1>
+            <p class="tagline">A tiny purple universe of code.</p>
+        </div>
+    </div>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Play Game</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="lore.html" class="active">Lore</a></li>
+            <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="info-section alt-bg">
+        <h2 class="section-title"><i class="fa-solid fa-star"></i> The Story Behind Quantum Shift</h2>
+        <p>
+            In the Quantum Shift universe, every correct answer nudges your ship a little
+            farther along a purple trail of orbiting code. Variables, tags, and selectors
+            all float around you like tiny stars waiting to be connected.
+        </p>
+        <p>
+            At lower levels, you are just stabilizing your orbit, learning how HTML tags
+            fit together and how CSS selectors target them. At higher levels, your ship
+            begins to “shift” across dimensions, where JavaScript starts wiring things
+            together with logic and events.
+        </p>
+        <p>
+            There is no boss fight here—just a simple loop of trying, reading, and trying
+            again until the concepts feel familiar.
+        </p>
+    </section>
+
+    <section class="info-section">
+        <h2 class="section-title"><i class="fa-solid fa-trophy"></i> Shift Levels</h2>
+        <ul class="resource-list">
+            <li><strong>Warm-Up:</strong> Just getting used to basic syntax and terms.</li>
+            <li><strong>Stable Orbit:</strong> You understand the main tags, selectors, and simple JS.</li>
+            <li><strong>Quantum Jump:</strong> You can explain concepts to someone else in plain language.</li>
+            <li><strong>Supernova:</strong> You’re ready to move on to larger projects and more complex logic.</li>
+        </ul>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-main">
+        <p>&copy; <span id="year-lore"></span> Quantum Shift. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="https://github.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Validation links -->
+    <p class="validators">
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">
+            Validate HTML
+        </a>
+        <span>|</span>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">
+            Validate CSS
+        </a>
+    </p>
+</footer>
+
+<script>
+    (function () {
+        var yearSpan = document.getElementById("year-lore");
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    })();
+</script>
+</body>
+</html>
